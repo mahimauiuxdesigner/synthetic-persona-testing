@@ -1,0 +1,495 @@
+{
+ "file_name": "manager-deletion-usability-report.html",
+ "short_title": "Manager Deletion Report",
+ "meta": "Shiftly usability test (fictional example), Clinic admin: Manager deletion",
+ "title": "Manager deletion: synthetic usability report",
+ "lead": "6 pretend admins (built to act like real ones) tried 4 tasks on the Manager deletion designs: removing a manager, moving their teams to new managers, and confirming the delete.",
+ "people_word": "admins",
+ "main_finding": "Admins can move the teams, but they don't know what deleting a manager will do. The last step says \"permanent\" without saying what is kept or lost, so careful admins stop, and rushed ones delete blind.",
+ "headline_numbers": [
+  {
+   "value": "2 of 11",
+   "label": "tasks fully done"
+  },
+  {
+   "value": "2.2 / 5",
+   "label": "trust in this flow"
+  }
+ ],
+ "fix_first": [
+  "Say what happens to the manager's staff, shifts and timesheets before the delete.",
+  "Add \"Deactivate\" so a manager who leaves loses access without losing records.",
+  "Make \"Delete\" look dangerous, and add undo plus a \"who got which team\" summary."
+ ],
+ "cast": [
+  {
+   "name": "Leah",
+   "about": "operations lead, busy, checklist person"
+  },
+  {
+   "name": "Omar",
+   "about": "HR, first time, manager leaves today"
+  },
+  {
+   "name": "Jonas",
+   "about": "ops analyst, fast, wants bulk and undo"
+  },
+  {
+   "name": "Grace",
+   "about": "regional director, careful, wants records kept"
+  },
+  {
+   "name": "Victor",
+   "about": "regional head, iPad, under a minute"
+  },
+  {
+   "name": "Mei",
+   "about": "coordinator, colour blind, keyboard, 125% zoom"
+  }
+ ],
+ "summary": [
+  {
+   "type": "Experienced admin",
+   "people": [
+    "Leah",
+    "Jonas"
+   ],
+   "did": "Moved teams fast and tried to fix a wrong pick.",
+   "saw": "Could move teams, but a wrong pick could not be undone, and nothing showed who got which team.",
+   "done": "1 of 4",
+   "done_note": "1 partly, 2 couldn't",
+   "trust": 2.0
+  },
+  {
+   "type": "Careful, first time",
+   "people": [
+    "Omar",
+    "Grace"
+   ],
+   "did": "Looked for what happens to staff, shifts and timesheets before deleting.",
+   "saw": "No screen answers it. Both stopped at \"permanent\" and did not delete.",
+   "done": "0 of 4",
+   "done_note": "2 couldn't",
+   "trust": 2.0
+  },
+  {
+   "type": "In a hurry, on a tablet",
+   "people": [
+    "Victor"
+   ],
+   "did": "Tapped through on an iPad in a meeting.",
+   "saw": "Missed the tiny menu, nearly tapped a bin icon, and deleted without reading.",
+   "done": "0 of 1",
+   "done_note": "partly done",
+   "trust": 2.0
+  },
+  {
+   "type": "Keyboard and colour blind",
+   "people": [
+    "Mei"
+   ],
+   "did": "Read every label and used the keyboard.",
+   "saw": "Finished the delete, but only labels told the delete button apart. Could not check a 5 and 3 split.",
+   "done": "1 of 2",
+   "done_note": "1 partly done",
+   "trust": 3.0
+  }
+ ],
+ "feelings": [
+  {
+   "feeling": "Relieved",
+   "tone": "positive",
+   "what": "Felt good at \"8 Teams reassigned successfully\".",
+   "people": [
+    "Leah",
+    "Omar",
+    "Mei"
+   ],
+   "line": "\"Good, that part is done.\""
+  },
+  {
+   "feeling": "Unsure",
+   "tone": "neutral",
+   "what": "Did not know if \"Select All\" picked 6 or 8 teams.",
+   "people": [
+    "Leah",
+    "Omar",
+    "Victor",
+    "Mei"
+   ],
+   "line": "\"Did it get page 2 as well?\""
+  },
+  {
+   "feeling": "Worried",
+   "tone": "concerned",
+   "what": "Saw a bin icon in a pop-up about moving teams.",
+   "people": [
+    "Leah",
+    "Jonas",
+    "Victor",
+    "Mei"
+   ],
+   "line": "\"Will this delete the team?\""
+  },
+  {
+   "feeling": "Frustrated",
+   "tone": "frustrated",
+   "what": "Could not undo a wrong pick or see who got which team.",
+   "people": [
+    "Leah",
+    "Jonas"
+   ],
+   "line": "\"Show me where they went, and let me undo.\""
+  },
+  {
+   "feeling": "Scared, stopped",
+   "tone": "negative",
+   "what": "Reached \"permanent and cannot be undone\" with no details.",
+   "people": [
+    "Omar",
+    "Grace"
+   ],
+   "line": "\"It says permanent. It doesn't say what is permanent.\""
+  }
+ ],
+ "patterns": [
+  {
+   "pattern": "Hidden consequences",
+   "people": [
+    "Omar",
+    "Grace",
+    "Leah"
+   ],
+   "saw": "No screen says what happens to staff, past shifts and timesheets.",
+   "design": "Show what is kept and what ends, before the delete."
+  },
+  {
+   "pattern": "No way back",
+   "people": [
+    "Leah",
+    "Jonas"
+   ],
+   "saw": "A wrong team move cannot be undone.",
+   "design": "Undo on the success message, and a summary you can edit."
+  },
+  {
+   "pattern": "Delete looks safe",
+   "people": [
+    "Victor",
+    "Mei",
+    "Grace"
+   ],
+   "saw": "\"Delete Manager\" is the same yellow as every safe button.",
+   "design": "A red or outlined danger button with a bin icon and the name."
+  },
+  {
+   "pattern": "Delete is the only option",
+   "people": [
+    "Omar",
+    "Grace"
+   ],
+   "saw": "HR wants to remove access but keep records.",
+   "design": "Add \"Deactivate\": access ends, records stay, can be undone."
+  },
+  {
+   "pattern": "Hard to count and choose",
+   "people": [
+    "Leah",
+    "Jonas",
+    "Mei",
+    "Victor"
+   ],
+   "saw": "\"Select All\" with 2 pages, no count, teams with no names or rep counts.",
+   "design": "Show all 8 teams, a selected count, and staff per team."
+  },
+  {
+   "pattern": "Confusing words and icons",
+   "people": [
+    "Victor",
+    "Leah",
+    "Jonas",
+    "Mei"
+   ],
+   "saw": "The pop-up never says \"delete\"; bin icons on teams; unlabelled icons.",
+   "design": "Plain words and labelled icons."
+  }
+ ],
+ "stuck": [
+  {
+   "letter": "A",
+   "problem": "Final step says \"permanent\", not what is lost",
+   "people": [
+    "Omar",
+    "Grace",
+    "Leah"
+   ],
+   "did": "Stopped and did not delete, or deleted without knowing.",
+   "change": "List what happens: access ends now, teams stay with new managers, past shifts and timesheets are kept.",
+   "impact": "High"
+  },
+  {
+   "letter": "B",
+   "problem": "\"Delete Manager\" looks like a safe button",
+   "people": [
+    "Victor",
+    "Mei",
+    "Grace"
+   ],
+   "did": "One admin tapped it out of habit without reading.",
+   "change": "Red or outlined danger style, a bin icon, and the name: \"Delete Nina Rao\".",
+   "impact": "High"
+  },
+  {
+   "letter": "C",
+   "problem": "No undo and no \"who got which team\"",
+   "people": [
+    "Leah",
+    "Jonas"
+   ],
+   "did": "Could not fix a wrong pick or check a 5 and 3 split.",
+   "change": "Undo on the success message. Show team, staff and new manager before the delete.",
+   "impact": "High"
+  },
+  {
+   "letter": "D",
+   "problem": "\"Select All\" with teams on 2 pages, no count",
+   "people": [
+    "Leah",
+    "Omar",
+    "Mei",
+    "Victor"
+   ],
+   "did": "Went to page 2 and back to count.",
+   "change": "Show all 8 teams on one page and \"2 selected\" on the button.",
+   "impact": "Medium"
+  },
+  {
+   "letter": "E",
+   "problem": "First pop-up never says \"delete\"",
+   "people": [
+    "Victor",
+    "Jonas"
+   ],
+   "did": "Paused, unsure what they had clicked.",
+   "change": "Title: \"Before you delete Nina Rao, move her 8 teams\".",
+   "impact": "Medium"
+  },
+  {
+   "letter": "F",
+   "problem": "Bin icon on teams in the move pop-up",
+   "people": [
+    "Leah",
+    "Jonas",
+    "Victor",
+    "Mei"
+   ],
+   "did": "Avoided it, or nearly tapped it.",
+   "change": "Use \"Remove from list\" or an x with a label.",
+   "impact": "Medium"
+  },
+  {
+   "letter": "G",
+   "problem": "Hard to find the manager; tiny menu",
+   "people": [
+    "Victor",
+    "Mei"
+   ],
+   "did": "Tapped the row instead of the menu; had to search.",
+   "change": "Real names in the list; a bigger, labelled menu button.",
+   "impact": "Medium"
+  },
+  {
+   "letter": "H",
+   "problem": "Unfinished toast text \"{manager name}\"",
+   "people": [
+    "Jonas"
+   ],
+   "did": "Did not know who got the teams.",
+   "change": "\"2 teams moved to Sam Lee. Undo\".",
+   "impact": "Low"
+  }
+ ],
+ "learned": [
+  {
+   "learned": "People won't delete what they don't understand",
+   "people": [
+    "Omar",
+    "Grace"
+   ],
+   "todo": "Say clearly what is kept and what ends, before the delete.",
+   "priority": "High"
+  },
+  {
+   "learned": "Someone leaving needs \"remove access\", not \"erase\"",
+   "people": [
+    "Omar",
+    "Grace"
+   ],
+   "todo": "Add \"Deactivate\", and keep permanent delete for real mistakes.",
+   "priority": "High"
+  },
+  {
+   "learned": "A permanent button must look dangerous",
+   "people": [
+    "Victor",
+    "Mei",
+    "Grace"
+   ],
+   "todo": "Danger style, bin icon and the person's name on the button.",
+   "priority": "High"
+  },
+  {
+   "learned": "Moving teams needs a check and a way back",
+   "people": [
+    "Leah",
+    "Jonas"
+   ],
+   "todo": "Summary of team, staff and new manager, plus undo.",
+   "priority": "Medium"
+  },
+  {
+   "learned": "Admins choose better with real details",
+   "people": [
+    "Mei",
+    "Victor",
+    "Leah"
+   ],
+   "todo": "Team names, rep counts, and who each manager already has.",
+   "priority": "Medium"
+  },
+  {
+   "learned": "Tablet and keyboard users need bigger, labelled controls",
+   "people": [
+    "Victor",
+    "Mei"
+   ],
+   "todo": "Bigger touch targets, labels on icons, visible focus.",
+   "priority": "Low"
+  }
+ ],
+ "quick_wins": [
+  {
+   "fix": "Say what is kept and what ends, on the final step",
+   "impact": "The two careful admins refused to delete without it, so the manager who left kept her access.",
+   "effort": "Text on an existing pop-up, once product agrees what really happens.",
+   "fixes": "Fixes A (High)",
+   "people": [
+    "Omar",
+    "Grace",
+    "Leah"
+   ]
+  },
+  {
+   "fix": "Make \"Delete Manager\" look dangerous",
+   "impact": "One admin tapped it out of habit; a colour-blind admin could only tell it apart by its label.",
+   "effort": "A button style change, plus the person's name in the label.",
+   "fixes": "Fixes B (High)",
+   "people": [
+    "Victor",
+    "Mei",
+    "Grace"
+   ]
+  },
+  {
+   "fix": "Say \"delete\" in the first pop-up",
+   "impact": "Admins paused, unsure what they had clicked.",
+   "effort": "A wording change.",
+   "fixes": "Fixes E (Medium)",
+   "people": [
+    "Victor",
+    "Jonas"
+   ]
+  },
+  {
+   "fix": "Show all 8 teams and a selected count",
+   "impact": "Admins went to page 2 and back to count, and weren't sure Select All covered both pages.",
+   "effort": "Remove paging for small lists; add a count to the button.",
+   "fixes": "Fixes D (Medium)",
+   "people": [
+    "Leah",
+    "Omar",
+    "Mei",
+    "Victor"
+   ]
+  },
+  {
+   "fix": "\"Remove from list\" instead of a bin icon",
+   "impact": "Four admins avoided it or nearly tapped it, thinking it deletes a team.",
+   "effort": "An icon and label swap.",
+   "fixes": "Fixes F (Medium)",
+   "people": [
+    "Leah",
+    "Jonas",
+    "Victor",
+    "Mei"
+   ]
+  }
+ ],
+ "impact_effort": {
+  "Do now": [
+   "Say what is kept and what ends",
+   "Make Delete look dangerous",
+   "Say \"delete\" in the first pop-up",
+   "Show all 8 teams and a selected count",
+   "Replace the bin icon with \"Remove from list\"",
+   "Fill in \"{manager name}\" in the message"
+  ],
+  "Plan next": [
+   "Add \"Deactivate\"",
+   "Undo after moving teams",
+   "\"Who got which team\" review step",
+   "Tell new managers and staff; keep a log"
+  ],
+  "Fill in": [
+   "Bigger, labelled 3-dot menu",
+   "Darker checkbox borders",
+   "Staff per team on each row"
+  ],
+  "Later": [
+   "Tablet layout and touch sizes",
+   "Reshuffle several managers at once"
+  ]
+ },
+ "metrics": {
+  "Completion": {
+   "value": "2 of 11",
+   "note": "tasks fully done; 5 partly, 4 not at all"
+  },
+  "Time on task": {
+   "value": "Not yet",
+   "note": "static screens have no timing; measure on the demo branch"
+  },
+  "Errors": {
+   "value": "20",
+   "note": "wrong actions, like tapping the row instead of the tiny menu"
+  },
+  "Satisfaction": {
+   "value": "2.2 / 5",
+   "note": "trust in this flow; most worried at the final delete, 4.2 / 5"
+  }
+ },
+ "before_acting": [
+  "Fill the frames with real names: 4 different managers in the list, 8 named teams.",
+  "Design the missing screens: the 3-dot menu opened, the manager dropdown opened, and what the admin sees after deleting.",
+  "Decide with product what really happens to a deleted manager's shifts and timesheets, then write it on the screen."
+ ],
+ "method": "6 pretend admins, each with a job, mood, device and comfort with tech, tried 1 or 2 of 4 tasks on the 6 Manager deletion screens and said what they thought and felt on each screen. A separate expert check looked at the same screens against usability, safe-delete and accessibility guidelines (24 findings).",
+ "tasks": [
+  {
+   "task": "Remove a manager who left, end to end",
+   "result": "2 of 5 fully done"
+  },
+  {
+   "task": "Split her teams between two managers",
+   "result": "0 of 2"
+  },
+  {
+   "task": "Find out what happens to her staff, shifts and timesheets",
+   "result": "0 of 2"
+  },
+  {
+   "task": "Fix a wrong team move, or back out safely",
+   "result": "0 of 2"
+  }
+ ]
+}
